@@ -84,6 +84,6 @@ final_briefing = client.models.generate_content(
     )
 )
 
-print("\n--- FINAL MULTI-AGENT CONTAINMENT & INCIDENT BRIEFING --- 🚨")
+print("\n--- FINAL MULTI-AGENT CONTAINMENT & INCIDENT BRIEFING --- ")
 print(final_briefing.text)
   
