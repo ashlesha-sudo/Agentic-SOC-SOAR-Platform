@@ -31,8 +31,8 @@ def simulate_threat_intel_lookup(ip_address: str) -> str:
 
 def block_malicious_ip(ip_address: str) -> str:
     """Tool: Remediation action that blocks an IP address at the corporate firewall level."""
-    print(f"\n⚡ [SOAR ACTION TRIGGERED] Executing automated firewall rule generation...")
-    print(f"🔒 [FIREWALL] Successfully blocked all incoming traffic from IP: {ip_address}")
+    print(f"\n [SOAR ACTION TRIGGERED] Executing automated firewall rule generation...")
+    print(f" [FIREWALL] Successfully blocked all incoming traffic from IP: {ip_address}")
     return f"Success: IP address {ip_address} has been blacklisted on the edge firewall. Active connections severed."
 
 # --- SPECIALIZED SUB-AGENT ---
@@ -65,7 +65,7 @@ When given an alert, follow this strict playbook:
 
 mock_alert_trigger = "High Alert: Critical authentication anomaly detected for user: j_doe@company.com"
 
-print("🚀 Launching Production-Grade Multi-Agent SOC & SOAR Loop...")
+print(" Launching Production-Grade Multi-Agent SOC & SOAR Loop...")
 print("Contents: Analyzing incoming telemetry...")
 
 import time
@@ -84,6 +84,6 @@ final_briefing = client.models.generate_content(
     )
 )
 
-print("\n🚨 --- FINAL MULTI-AGENT CONTAINMENT & INCIDENT BRIEFING --- 🚨")
+print("\n--- FINAL MULTI-AGENT CONTAINMENT & INCIDENT BRIEFING --- 🚨")
 print(final_briefing.text)
   
